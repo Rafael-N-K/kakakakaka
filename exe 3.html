@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+ // Captura o número do usuário
+    let numero = parseInt(prompt("Digite um número para ver sua tabuada:"));
+
+    // Verifica se o número inserido é válido
+    if (isNaN(numero)) {
+        alert("Por favor, insira um número válido.");
+    } else {
+        // Cria uma string para armazenar a tabuada
+        let tabuada = `<h2>Tabuada de ${numero}:</h2>`;
+        
+        // Laço para gerar a tabuada de multiplicação
+        for (let i = 1; i <= 10; i++) {
+            tabuada += `${numero} x ${i} = ${numero * i} <br>`;
+        }
+</script>
